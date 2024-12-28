@@ -23,6 +23,20 @@ p {
 	font-family: "Open Sans",sans-serif;
 	font-weight: 200;
 	font-size: 14pt;
+	margin-bottom: 10px;
+}
+
+.nav-item {
+	font-family: "Open Sans";
+	font-weight: 400;
+	color: #E59514;
+	text-decoration: none;
+	margin: 25px 35px 0 0;
+}
+
+
+a {
+	color: #E59514;
 }
 
 #subtitle {
@@ -77,8 +91,8 @@ p {
 	padding: 20px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 875px) {
   .flex-grid {
-    display: block;
+    flex-direction: column;
   }
 }
