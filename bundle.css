@@ -29,6 +29,7 @@ p {
 .nav-item {
 	font-family: "Open Sans";
 	font-weight: 400;
+	font-size: 14pt;
 	color: #E59514;
 	text-decoration: none;
 	margin: 25px 35px 0 0;
@@ -83,6 +84,10 @@ a {
 }
 
 .flex-grid {
+	display: flex;
+}
+
+.nav-grid {
 	display: flex;
 }
 
