@@ -91,25 +91,27 @@ img {
 	width: 100%;;
 }
 
-.icon {
-	display: inline-block;
-	width: 24px;
-	height: 24px;
-	background-size: cover;
-  }
+a>.social-icon {
+	width: 30px;
+	height: 30px;
+	fill: var(--brand_primary);
+	transition: fill .175s;
+	margin: 12px 0;
+}
 
-.social-ig {
-	background-image: url(../svg/social-ig.svg);
+a>.social-icon:hover {
+	fill: var(--brand_primary-darken);
+	transition: fill .175s;
 }
 
 a {
 	color: var(--brand_primary);
-	transition: color .350s;
+	transition: color .175s;
 }
 
 a:hover {
 	color: var(--brand_primary-darken);
-	transition: color .350s;
+	transition: color .175s;
 }
 
 .button {
