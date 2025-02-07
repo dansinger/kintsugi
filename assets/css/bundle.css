@@ -1,0 +1,134 @@
+/* @import url('bootstrap.css'); */
+
+:root {
+	--neutral-light: #F0F0F0;
+	--neutral-dark: #030200;
+	--brand_primary: #E59514;
+	--brand_primary-darken: #EDB55B;
+  }
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+  
+body {
+	background: var(--neutral-dark);
+	max-width: 1440px;
+	margin: auto;
+}
+
+h1, h2, h3 {
+	font-family: "Rufina", serif;
+}
+
+h4, h5, h6, p, a {
+	font-family: "Open Sans",sans-serif;
+	font-weight: 500;
+}
+
+h1 {
+	color: var(--brand_primary);
+	font-weight: 700;
+	font-size: 68px;
+	margin: 0 0 8px 0;
+	@media (max-width: 767px) {
+		font-size: 48px;
+	}
+}
+
+h2 {
+	color: var(--brand_primary);
+	font-weight: 700;
+	font-size: 40px;
+}
+
+
+p {
+	color: var(--neutral-light);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 165%;
+	margin: 16px 0;
+}
+
+.large {
+	font-size: 24px;
+	line-height: 135%;
+	@media (max-width: 767px) {
+		font-size: 20px;
+	}
+}
+
+.flex-container {
+	display: flex;
+}
+
+.grid-container {	
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	grid-column-gap: 32px;
+	grid-auto-flow: row;
+	margin: 128px 32px;
+	@media (max-width: 767px) {
+		grid-template-columns: repeat(1, 1fr);
+		margin: 64px 16px;
+	}
+}
+
+.vertical-center {
+	align-content: center;
+}
+
+.hero-about, .comissions {
+	grid-row: 1;
+	@media (max-width: 767px) {
+		grid-row: 2;
+	}
+}
+
+img {
+	width: 100%;;
+}
+
+.icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background-size: cover;
+  }
+
+.social-ig {
+	background-image: url(../svg/social-ig.svg);
+}
+
+a {
+	color: var(--brand_primary);
+	transition: color .350s;
+}
+
+a:hover {
+	color: var(--brand_primary-darken);
+	transition: color .350s;
+}
+
+.button {
+	display: inline-block;
+	background-color: var(--brand_primary);
+	padding: 12px 24px;
+	border-radius: 8px;
+	border: none;
+	color: var(--neutral-dark);
+	font-size: 18px;
+	text-decoration: none;
+	transition: background-color .250s;
+	margin: 24px 0;
+}
+
+.button:hover {
+	color: var(--neutral-dark);
+	background-color: var(--brand_primary-darken);
+	transition: background-color .175s;
+}
