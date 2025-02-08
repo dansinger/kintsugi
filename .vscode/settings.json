@@ -1,0 +1,5 @@
+{
+    "prettier.useEditorConfig": false,
+    "prettier.bracketSpacing": false,
+    "editor.wordWrap": "on"
+}
